@@ -1,0 +1,15 @@
+{
+  "send-reset-link": "Send me a reset link",
+  "forgot-password-title": "Forgot your password ?",
+  "forgot-password-copy": "No problem, it happens! Just give us your email address and we will send you a reset link",
+  "e-mail-address": "E-mail address",
+  "email-not-found": "E-mail address not found",
+  "email-sent-title": "An email is on the way",
+  "email-sent-copy": "Click the link in your email to reset your password",
+  "change-password": "No problen, it happens! Choose a new one below",
+  "new-password": "New password",
+  "confirm-password": "Confirm new password",
+  "password-not-changed": "Could not change the password",
+  "success": "Success",
+  "changed-password-success": "Your password has been changed. We are looking forward to seeing you again soon."
+}

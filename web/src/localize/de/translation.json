@@ -1,0 +1,14 @@
+{
+  "send-reset-link": "Schick mir einen Link",
+  "forgot-password-title": "Du hast dein Password vergessen ?",
+  "forgot-password-copy": "Kein Problem, dass kann passieren! Gib intern einfach deine E-Mail Adresse ein und wir schicken dir einen Link zum Rücksetzen.",
+  "e-mail-address": "E-Mail Adresse",
+  "email-sent-title": "Eine E-Mail ist unterwegs",
+  "email-sent-copy": "Kliken sie auf den Link in deiner E-Mail, um dein Password zurrückzusetzen",
+  "change-password": "Kein Problem, dass kann passieren! Vergib untern einfach ein neues Password",
+  "new-password": "Neues Password",
+  "confirm-password": "Neues Password wiederholen",
+  "password-not-changed": "Passwort konnte nicht geändert werden",
+  "success": "Password erfolgreich geändert!",
+  "changed-password-success": "Dein Password wurde geändert. Wir freuen uns auf ein baldiges Wiedersehen."
+}
