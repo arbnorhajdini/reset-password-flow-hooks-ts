@@ -1,5 +1,6 @@
-# Getting Started with the reset password flow
+# Getting Started with the reset password flow with react hooks and typescript
 
+This application has the same functionality of [reset-password-flow](https://github.com/arbnorhajdini/reset-password-flow), but this one in build on react hooks and typescript.
 This is a Single Page Application that lets users to vote through the Polls API.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Documentation for the Polls API is available [here](https://pollsapi.docs.apiary.io/).
