@@ -1,4 +1,4 @@
-# Getting Started with the reset password flow with react hooks and typescript
+# Getting Started with the "Reset Password Flow" with react hooks and typescript
 
 This application has the same functionality of [reset-password-flow](https://github.com/arbnorhajdini/reset-password-flow), but this one in build on react hooks and typescript.
 This is a Single Page Application that lets users to vote through the Polls API.
@@ -10,7 +10,6 @@ The application is tested End-2-End using [Cypress Framework](https://www.cypres
 
 1. Frontend: react, bootstrap, noty, i18next, universal-cookies, react-icons.
 2. Backend: node, express, mongodb, nodemailer.
-3. Unit test: enzyme, mocha.
 4. E2e: Cypress
 
 ## USAGE
