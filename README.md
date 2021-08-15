@@ -29,7 +29,7 @@ The application is tested End-2-End using [Cypress Framework](https://www.cypres
 
 ## Online Deployed Demo
 
-The Online Demo for the Voting App with complete functionality can be accessed at https://github.com/arbnorhajdini/keleya-reset-password-flow
+The Online Demo for the App with complete functionality can be accessed at https://github.com/arbnorhajdini/keleya-reset-password-flow
 
 ## Local Installation Guide
 
