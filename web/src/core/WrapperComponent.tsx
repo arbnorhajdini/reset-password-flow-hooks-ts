@@ -26,7 +26,11 @@ const StyledContent = styled.div`
 `
 StyledContent.displayName = 'StyledContent'
 
-export default function WrapperComponent ({ children }) {
+type Props = {
+  children: any
+}
+
+export default function WrapperComponent ({ children }: Props) {
   return (
     <StyledPageWrapper>
       <StyledContent className='text-center'>

@@ -11,6 +11,13 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.6.0",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/styled-components": "^5.1.12",
     "bootstrap": "^4.5.3",
     "cypress": "^7.7.0",
     "dotenv": "^8.2.0",
@@ -31,10 +38,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "styled-components": "^5.2.1",
+    "typescript": "^4.3.5",
     "universal-cookie": "^4.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "del -rf tsconfig.json && react-scripts start",
     "build": "react-scripts build",
     "build:staging": "env-cmd -f .env.staging npm run-script build",
     "test": "cross-env NODE_ENV=test mocha -r jsdom-global/register --require @babel/register --require ignore-styles test/*.test.js",
@@ -68,12 +76,8 @@
     "@babel/register": "7.12.1",
     "babel-plugin-inline-react-svg": "^1.1.2",
     "babel-preset-react-app-babel-7": "^4.0.2-0",
-    "chai": "^4.2.0",
-    "chai-enzyme": "^1.0.0-beta.1",
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-standard": "^16.0.1",
@@ -83,7 +87,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "ignore-styles": "^5.0.1",
+    "ignore-styles": "^5.0.1"
   },
   "resolutions": {
     "styled-components": "^5"

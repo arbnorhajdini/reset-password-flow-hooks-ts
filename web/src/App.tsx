@@ -17,7 +17,7 @@ export default function App () {
     <Suspense fallback={<p>Page is loading...</p>}>
       <Router>
         <Switch>
-          <Route exact path='/:language' render={() => <ForgotPassword language={LANGUAGE} />} />
+          <Route exact path='/:language' render={() => <ForgotPassword />} />
           <Route exact path='/:language/email-sent' render={() => <EmailSent />} />
           <Route exact path='/:language/change-password' render={() => <ChangePassword />} />
           <Route exact path='/:language/success-changed' render={() => <SuccessChanged />} />

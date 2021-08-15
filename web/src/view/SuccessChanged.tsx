@@ -8,7 +8,7 @@ export default function SuccessChanged () {
 
   return (
     <>
-      <WrapperComponent className='text-center'>
+      <WrapperComponent>
         <p className='h5 font-weight-bold pt-5'>{t('success')}</p>
         <p className='pt-3'>{t('changed-password-success')}</p>
         <img width="100" height="140" className='mt-3 mb-5' src={Logo} alt="keleya" />

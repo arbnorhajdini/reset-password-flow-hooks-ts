@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ChangeEventHandler } from 'react'
 import styled from 'styled-components'
 import { colors } from '../theme/colors'
 import { breakpoints } from '../theme/breakpoints'
@@ -19,7 +19,15 @@ const StyledInputField = styled.input`
 `
 StyledInputField.displayName = 'StyledInputField'
 
-export default function InputField ({ children, onChange, className, type, id }) {
+type Props = {
+  onChange: ChangeEventHandler,
+  children: string,
+  className: string,
+  type: string,
+  id: string
+}
+
+export default function InputField ({ children, onChange, className, type, id }: Props) {
   return (
     <div className="form-group">
       <div className="col-lg-4 m-auto">

@@ -11,8 +11,8 @@ import { useTranslation } from 'react-i18next'
 export default function ChangePassword () {
   const cookies = new Cookies()
   const { t } = useTranslation()
-  const history = useHistory('')
-  const { language } = useParams()
+  const history = useHistory()
+  const { language } = useParams<{ language: string }>()
   const [email] = useState(cookies.get('email'))
   const [password, setPassword] = useState('')
   const [confirmPassword, setconfirmPassword] = useState('')
@@ -27,11 +27,11 @@ export default function ChangePassword () {
 
   return (
     <>
-      <WrapperComponent className='text-center'>
+      <WrapperComponent>
         <p className='h6 font-weight-bold pt-5'>{t('forgot-password-title')}</p>
         <p className='pt-5'>{t('change-password')}</p>
-        <InputField onChange={(event) => setPassword(event.target.value)} type='password' id='password' className='form-control mt-5'>{t('new-password')}</InputField>
-        <InputField onChange={(event) => setconfirmPassword(event.target.value)} type='password' id='confirm-password' className='form-control mt-5'>{t('confirm-password')}</InputField>
+        <InputField onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)} type='password' id='password' className='form-control mt-5'>{t('new-password')}</InputField>
+        <InputField onChange={(event: React.ChangeEvent<HTMLInputElement>) => setconfirmPassword(event.target.value)} type='password' id='confirm-password' className='form-control mt-5'>{t('confirm-password')}</InputField>
         <Button
           disabled={!(password === confirmPassword && password.length > 3 && confirmPassword.length > 3) }
           onClick={() => handleSubmit()} className='btn primary mt-5'>

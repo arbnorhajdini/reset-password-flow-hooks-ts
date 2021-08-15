@@ -29,7 +29,7 @@ StyledIcon.displayName = 'StyledIcon'
 
 export default function EmailSent () {
   const { t } = useTranslation()
-  const history = useHistory('')
+  const history = useHistory()
 
   const sendBack = () => {
     history.goBack()

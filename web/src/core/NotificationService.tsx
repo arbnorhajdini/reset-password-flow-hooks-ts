@@ -1,6 +1,6 @@
 import Noty from 'noty'
 
-function pushNotification (notificationType, title) {
+function pushNotification (notificationType: any, title: string) {
   new Noty({
     type: notificationType,
     text: title,
@@ -9,16 +9,16 @@ function pushNotification (notificationType, title) {
 }
 
 export const NotificationService = {
-  pushErrorNotification: function (title) {
+  pushErrorNotification: function (title: string) {
     pushNotification('error', title)
   },
-  pushInfoNotification: function (title) {
+  pushInfoNotification: function (title: string) {
     pushNotification('information', title)
   },
-  pushWarningNotification: function (title) {
+  pushWarningNotification: function (title: string) {
     pushNotification('warning', title)
   },
-  pushSuccessNotification: function (title) {
+  pushSuccessNotification: function (title: string) {
     pushNotification('success', title)
   }
 }

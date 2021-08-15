@@ -11,8 +11,8 @@ import { useTranslation } from 'react-i18next'
 
 export default function ForgotPassword () {
   const { t } = useTranslation()
-  const history = useHistory('')
-  const { language } = useParams()
+  const history = useHistory()
+  const { language } = useParams<{ language: string }>()
   const [email, setEmail] = useState('')
 
   const handleSubmit = () => {
@@ -29,7 +29,7 @@ export default function ForgotPassword () {
       })
   }
 
-  const handleMessage = (languages) => {
+  const handleMessage = (languages: string) => {
     fetchMail({ email, languages })
       .then((mail) => {
         window.open(mail, '_blank', 'noopener,noreferrer')
@@ -47,7 +47,7 @@ export default function ForgotPassword () {
       <WrapperComponent>
         <p className='h6 font-weight-bold pt-5'>{t('forgot-password-title')}</p>
         <p className='pt-5'>{t('forgot-password-copy')}</p>
-        <InputField onChange={(event) => setEmail(event.target.value)} type='email' id='email' className='form-control mt-5'>{t('e-mail-address')}</InputField>
+        <InputField onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)} type='email' id='email' className='form-control mt-5'>{t('e-mail-address')}</InputField>
         <Button disabled={!email} onClick={() => handleSubmit()} className='btn primary mt-5'>{t('send-reset-link')}</Button>
       </WrapperComponent>
     </>
